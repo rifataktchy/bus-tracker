@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\nodejs\node_modules\bin\yarn.js add axios react-leaflet leaflet
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files (x86)\nodejs\node_modules\bin\;C:\Program Files\Git\cmd;C:\Users\Rashed\AppData\Local\Microsoft\WindowsApps;;C:\Users\Rashed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Rashed\AppData\Roaming\npm;C:\Users\Rashed\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.10.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\Rashed\AppData\Local\Yarn\Cache\v6\npm-function-prototype-name-1.1.6-cdf315b7d90ee77a4c6ee216c3c3362da07533fd-integrity\node_modules\function.prototype.name\test\tests.js' -> 'E:\rifat\react-work\finland-bus-tracker-frontend\node_modules\function.prototype.name\test\tests.js'
+
+npm manifest: 
+  {
+    "name": "finland-bus-tracker-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.17.0",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^13.5.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "5.0.1",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
