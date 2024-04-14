@@ -1,13 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// index.js
 
+const express = require('express');
+const mqtt = require('mqtt');
+const axios = require('axios');
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const app = express();
+const PORT = process.env.PORT || 3000;
 
+// MQTT Client setup
+const mqttClient = mqtt.connect('mqtt://mqtt.hsl.fi');
+
+mqttClient.on('connect', function () {
+    mqttClient.subscribe('vehicle/+/+/+/+/+/+');
+});
+
+mqttClient.on('message', function (topic, message) {
+   
+});
+
+app.get('/telemetry', (req, res) => {
+    res.json({ message: 'Search endpoint' });
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
